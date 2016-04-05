@@ -80,6 +80,12 @@ public class MessageService extends AbstractService {
             // msg.getQueueId()//
             // );
             map.put("Queue ID", String.valueOf(msg.getQueueId()));
+            
+            // System.out.printf("%-20s %d\n",//
+            // "Buyer ID:",//
+            // msg.getBuyerId()//
+            // );
+            map.put("Buyer ID", msg.getBuyerId());
 
             // System.out.printf("%-20s %d\n",//
             // "Queue Offset:",//
