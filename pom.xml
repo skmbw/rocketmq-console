@@ -43,6 +43,20 @@
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity-tools</artifactId>
 			<version>${velocity-tools.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-tiles</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba.rocketmq</groupId>
